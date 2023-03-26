@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple calculator app built using ReactJS. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division, as well as calculate percentages of numbers and toggle the sign of a number. The app is designed to be user-friendly and responsive on all devices.
 
-## Available Scripts
+The app is hosted on firebase and can be accessed at [https://reavanth-calculator.web.app](https://reavanth-calculator.web.app).
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Getting started](#getting-started)
+- [How to use](#how-to-use)
+- [Code Structure](#code-structure)
+- [Technologies used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Demo](#demo)
+- [Acknowledgements](#acknowledgements)
+- [Additional Information](#additional-information)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Basic arithmetic operations: addition, subtraction, multiplication, and division.
+2. Percentage calculation: users can calculate the percentage of a number.
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To use the app, simply go to the live demo or clone the repository to your local machine and run `npm start` to start the server.
 
-### `npm run build`
+## How to use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Enter a number or an arithmetic operation using the buttons on the calculator interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Press the equal sign (`=`) to calculate the result.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To perform a new calculation, clear the input field using the "C" button.
 
-### `npm run eject`
+Use the percentage button (`%`) to calculate the percentage of a number. The percentage button only works for the last number entered.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Use the sign toggle button (`+/-`) to switch the sign of a number. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Code structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The code is structured using React functional components and hooks. The main component is `Calculator`, which contains all the other components, including `Display`, `Button`, and `Keypad`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The `useState` hook is used to manage the input and output of the calculator. The input is stored in the `input` state variable and the output is calculated using the `eval()` function.
 
-## Learn More
+The `handleOperator`, `handleDecimal`, `handlePercentage`, and `toggleSign` functions handle the click events for the corresponding buttons. These functions ensure that the input is valid and that the output is calculated correctly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ReactJS
+- CSS3
+- HTML5
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/) for more information.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This app is licensed under the MIT License. See the `LICENSE` file for more information.
 
-### Making a Progressive Web App
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You can see a live demo of the app at [here](https://youtu.be/h-uiYh8yNaE).
 
-### Advanced Configuration
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We would like to thank the following individuals and organizations for their contributions to this project:
 
-### Deployment
+- [ReactJS](https://react.dev)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Additional Information
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more information, please contact us at revanthsrinivaslu03@gmail.com.

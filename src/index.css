@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+.fa-25 {
+  font-size: 30px !important;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container .calculator {
+  position: relative;
+  display: grid;
+}
+.container .calculator .input {
+  grid-column: span 4;
+  height: 120px;
+  width: 300px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 20px;
+  margin-top: 78px;
+  font-size: 30px;
+  background: transparent;
+  resize: none;
+  overflow: hidden;
+  color: #ffff;
+  cursor: default;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container .calculator span {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  color: #9277f9;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+
+.container .calculator span:hover {
+  transition: 0s;
+  background: rgba(15, 14, 14, 0.05);
+}
+
+.container .calculator span:active {
+  background: #86ff14;
+  font-size: 24px;
+  font-weight: 500;
+  color: #192f00;
+}

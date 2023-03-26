@@ -49,12 +49,11 @@ The `handleOperator`, `handleDecimal`, `handlePercentage`, and `toggleSign` func
 ## Technologies used
 
 - ReactJS
-- CSS3
-- HTML5
+
 
 ## Contributing
 
-Contributions are welcome! Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/) for more information.
+Contributions are welcome! If you find a bug or have a feature request, please create an issue on the GitHub repository.
 
 ## License
 

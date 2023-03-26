@@ -12,8 +12,19 @@ function Calculator() {
   const lastNumber = number[number.length - 1]; //this is the last number what we seen in textarea
   // console.log(lastNumber);
 
+  //This will  Set input length to zero then we start from 0
+  function setInputLength(length) {
+    setInput((input) => {
+      if (length === 0) {
+        return "";
+      }
+      return input.slice(0, length);
+    });
+  }
+
   //This function handle the click event of operators
   const handleOperator = (e) => {
+    console.log(currentNumber.length);
     if (currentNumber.length === 0) {
       //This check not allow the user to start with operations eg:*45 or /54 are not allowed
       return;
@@ -87,7 +98,8 @@ function Calculator() {
         />
         <span
           onClick={() => {
-            setInput(" ");
+            setInput("");
+            setInputLength(0);
           }}
         >
           C

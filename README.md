@@ -48,7 +48,7 @@ The `handleOperator`, `handleDecimal`, `handlePercentage`, and `toggleSign` func
 ## Technologies used
 
 - ReactJS
-- React Hooks
+
 
 
 ## Contributing

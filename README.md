@@ -14,7 +14,6 @@ The app is hosted on firebase and can be accessed at [https://reavanth-calculato
 - [Contributing](#contributing)
 - [License](#license)
 - [Demo](#demo)
-- [Acknowledgements](#acknowledgements)
 - [Additional Information](#additional-information)
 
 ## Features
@@ -49,6 +48,7 @@ The `handleOperator`, `handleDecimal`, `handlePercentage`, and `toggleSign` func
 ## Technologies used
 
 - ReactJS
+- React Hooks
 
 
 ## Contributing
@@ -62,12 +62,6 @@ This app is licensed under the MIT License. See the `LICENSE` file for more info
 ## Demo
 
 You can see a live demo of the app at [here](https://youtu.be/h-uiYh8yNaE).
-
-## Acknowledgements
-
-We would like to thank the following individuals and organizations for their contributions to this project:
-
-- [ReactJS](https://react.dev)
 
 ## Additional Information
 
